@@ -20,7 +20,9 @@ async def upgrade(bot,update):
 	Pay Using Upi I'd ```NOT Available```
 	
 	After Payment Send Screenshots Of 
-        Payment To Admin"""
+        Payment To Admin
+	
+	Plan Upgrade Option Is Not Available Now"""
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/MW_BOTS")], 
         			[InlineKeyboardButton("PayPal 🌎",url = "https://t.me/MW_BOTS"),
@@ -48,7 +50,7 @@ async def upgradecm(bot,message):
 	After Payment Send Screenshots Of 
         Payment To Admin
 	
-	"""
+	Plan Upgrade Option Is Not Available Now"""
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/MW_BOTS")], 
         			[InlineKeyboardButton("PayPal 🌎",url = "https://t.me/MW_BOTS"),
