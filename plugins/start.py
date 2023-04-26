@@ -59,8 +59,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]))
+	 [[ InlineKeyboardButton("𝙐𝙋𝘿𝘼𝙏𝙀𝙎" ,url="https://t.me/MW_BOTS") ], 
+	[InlineKeyboardButton("𝙎𝙐𝙋𝙋𝙊𝙍𝙏", url="https://t.me/MW_BOTZ_SUPPORT") ]  ]))
 	    return
 	if id:
 	        if id == procode:
@@ -75,10 +75,10 @@ async def send_doc(client,message):
        	try:
        		await client.get_chat_member(update_channel, user_id)
        	except UserNotParticipant:
-       		await message.reply_text("**__You are not subscribed my channel__** ",
+       		await message.reply_text("**__You Have To Join our Update channel To Use This Bot__** ",
        		reply_to_message_id = message.id,
        		reply_markup = InlineKeyboardMarkup(
-       		[ [ InlineKeyboardButton("Support 🇮🇳" ,url=f"https://t.me/{update_channel}") ]   ]))
+       		[ [ InlineKeyboardButton("🔅 ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔅" ,url=f"https://t.me/{update_channel}") ]   ]))
        		return
        try:
            bot_data = find_one(int(botid))
@@ -163,6 +163,6 @@ async def send_doc(client,message):
        		    total_rename(int(botid),prrename)
        		    total_size(int(botid),prsize,file.file_size)
        		    await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {filesize}\n**Dc ID** :- {dcid}""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup(
-       		[[ InlineKeyboardButton("📝 Rename",callback_data = "rename"),
-       		InlineKeyboardButton("✖️ Cancel",callback_data = "cancel")  ]]))
+       		[[ InlineKeyboardButton("📝 𝙍𝙀𝙉𝘼𝙈𝙀",callback_data = "rename"),
+       		InlineKeyboardButton("❌ 𝘾𝘼𝙉𝘾𝙀𝙇",callback_data = "cancel")  ]]))
        		
